@@ -1,18 +1,18 @@
-## Getting Started
+## Description
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Projet jeu vidéo de type "runner" (Mario Bros, Sonic...).
 
-## Folder Structure
+## Structure
 
-The workspace contains two folders by default, where:
+Le dossier de travail contient différents dossiers :
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `src`: contient les sources (runner : codes, pictures : ressources externes type image)
+- `lib`: contient les librairies JavaFX nécessaires à l'execution du code
+- `bin`: contient les sorties des fichiers java
+- `.vscode`: contient les fichiers de configurations. 
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## A noter
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+il faut ajouter la ligne suivante dans le fichier .vscode/launch.json :
+"vmArgs": "--module-path <path/to/javafx/lib> --add-modules javafx.controls,javafx.fxml"
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
