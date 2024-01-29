@@ -14,7 +14,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
              /** Création de la scène */
-        primaryStage.setTitle("Runner Project - Oscar Chêne - 2G2TD1TP1");
+        primaryStage.setTitle("Runner Project - Oscar Chêne");
         Group root = new Group();
         Pane pane = new Pane(root);
         GameScene theScene = new GameScene(pane, 1600, 400,true);

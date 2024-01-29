@@ -25,10 +25,10 @@ public class GameScene extends Scene {
     private StaticThing right;
     private StaticThing right2;
     private LifeCount lifebar;
-    private Hero hero= new Hero(300,250 ,0, "file:///C:\\Users\\oscar\\IdeaProjects\\Runner_Project\\heros.png", 84, 100 );
+    private Hero hero= new Hero(300,250 ,0, "file:///..\\src\\Pictures\\heros.png", 84, 100 );
 
     private ArrayList<Foe> traps = new ArrayList<Foe>();
-    private StaticThing gameoverscene=new StaticThing(666,375,"file:///'C:\\Users\\oscar\\IdeaProjects\\Runner_Project\\Game Over.png'");
+    private StaticThing gameoverscene=new StaticThing(666,375,"file:///..\\src\\Pictures\\GameOver.png");
 
     static Random rand = new Random();
 
@@ -37,13 +37,13 @@ public class GameScene extends Scene {
     public GameScene(Pane root, double width, double height, boolean depthbuffer) {
         super(root, width, height, depthbuffer);
         this.Cam = new Camera(800, 420, 200, 200);
-        this.left = new StaticThing(800, 600, "file:///C:\\Users\\oscar\\IdeaProjects\\Runner_Project\\desert.png");
-        this.right = new StaticThing(800, 600, "file:///C:\\Users\\oscar\\IdeaProjects\\Runner_Project\\desert.png");
-        this.right2 = new StaticThing(800, 600, "file:///C:\\Users\\oscar\\IdeaProjects\\Runner_Project\\desert.png");
-        this.lifebar = new LifeCount(499,499,"file:///C:\\Users\\oscar\\IdeaProjects\\Runner_Project\\health_bar.png");
+        this.left = new StaticThing(800, 600, "file:///..\\src\\Pictures\\desert.png");
+        this.right = new StaticThing(800, 600, "file:///..\\src\\Pictures\\desert.png");
+        this.right2 = new StaticThing(800, 600, "file:///..\\src\\Pictures\\desert.png");
+        this.lifebar = new LifeCount(499,499,"file:///..\\src\\Pictures\\health_bar.png");
 
         for (int k=0;k<10;k++){
-            this.traps.add(new Foe(2000+rand.nextInt(10000), 290, 3, "file:///C:\\Users\\oscar\\IdeaProjects\\Runner_Project\\trap.png", 179, 78));
+            this.traps.add(new Foe(2000+rand.nextInt(10000), 290, 3, "file:///..\\src\\Pictures\\trap.png", 179, 78));
         }
 
 
